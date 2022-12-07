@@ -5,10 +5,10 @@ while true do
     wait()
         
           
-            local tool = player.Character:FindFirstChildOfClass("Tool")    
+            local Vibroknife = player.Character:FindFirstChildOfClass("Vibroknife")    
 
                
-if ssss == false and player.Character:FindFirstChildOfClass("Tool") then
+if ssss == false and player.Character:FindFirstChildOfClass("Vibroknife") then
    getgenv().ssss = true
 local localPlayer = game:GetService("Players").LocalPlayer
 local currentCamera = game:GetService("Workspace").CurrentCamera
@@ -33,13 +33,13 @@ local function getClosestPlayer()
 
     return closestPlayer
 end
-tool.Activated:Connect(function()
+Vibroknife.Activated:Connect(function()
                 if getClosestPlayer() ~= nil then
                 for i,v in next, getClosestPlayer().Character:GetChildren() do
                     if v:IsA("BasePart") then
                         for i = 0,5 do
-                        firetouchinterest(tool.Hilt,v,0)
-                        firetouchinterest(tool.Hilt,v,1)
+                        firetouchinterest(Vibroknife.Hilt,v,0)
+                        firetouchinterest(Vibroknife.Hilt,v,1)
                         end
                     end
                 end
