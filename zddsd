@@ -38,8 +38,8 @@ Vibroknife.Activated:Connect(function()
                 for i,v in next, getClosestPlayer().Character:GetChildren() do
                     if v:IsA("BasePart") then
                         for i = 0,5 do
-                        firetouchinterest(Vibroknife.Hilt,v,0)
-                        firetouchinterest(Vibroknife.Hilt,v,1)
+                        firetouchinterest(Vibroknife.Handle,v,0)
+                        firetouchinterest(Vibroknife.Handle,v,1)
                         end
                     end
                 end
