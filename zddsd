@@ -33,7 +33,7 @@ local function getClosestPlayer()
 
     return closestPlayer
 end
-Vibroknife.Activated:Connect(function()
+tool.Activated:Connect(function()
                 if getClosestPlayer() ~= nil then
                 for i,v in next, getClosestPlayer().Character:GetChildren() do
                     if v:IsA("BasePart") then
