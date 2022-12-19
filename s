@@ -309,7 +309,7 @@ local FieldOfViewBOX = GeneralTab:AddLeftTabbox("Field Of View") do
     PredictionTab:AddToggle("Prediction", {Text = "Mouse.Hit/Target Prediction"}):OnChanged(function()
         SilentAimSettings.MouseHitPrediction = Toggles.Prediction.Value
     end)
-    PredictionTab:AddSlider("Amount", {Text = "Prediction Amount", Min = 0.100, Max = 1, Default = 0.165, Rounding = 3}):OnChanged(function()
+    PredictionTab:AddSlider("Amount", {Text = "Prediction Amount", Min = 0.100, Max = 1, Default = 0.165, Rounding = 0.1}):OnChanged(function()
         PredictionAmount = Options.Amount.Value
         SilentAimSettings.MouseHitPredictionAmount = Options.Amount.Value
     end)
