@@ -1,6 +1,6 @@
 -- // New version: See ./Aiming/SilentAim.lua
 
-if DaHoodSettings then return DaHoodSettings end
+if getgenv().DaHoodSettings then return getgenv().DaHoodSettings end
 
 -- // Services
 local Players = game:GetService("Players")
