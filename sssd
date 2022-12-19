@@ -37,14 +37,14 @@ local FindFirstChild = Instancenew("Part").FindFirstChild
 getgenv().ValiantAimHacks = {
     SilentAimEnabled = true,
     ShowFOV = true,
-    FOVSides = 12,
+    FOVSides = 300,
     VisibleCheck = true,
     TeamCheck = true,
     FOV = 60,
     HitChance = 100,
     Selected = LocalPlayer,
     SelectedPart = nil,
-    TargetPart = {"Head", "HumanoidRootPart"},
+    TargetPart = {"Head"},
     BlacklistedTeams = {
         {
             Team = LocalPlayer.Team,
