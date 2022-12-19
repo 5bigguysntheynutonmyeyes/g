@@ -34,7 +34,7 @@ local FindFirstChildWhichIsA = Instancenew("Part").FindFirstChildWhichIsA
 local FindFirstChild = Instancenew("Part").FindFirstChild
 
 -- // Silent Aim Vars
-getgenv().ValiantAimHacks = {
+local DaHoodSettings = {
     SilentAimEnabled = true,
     ShowFOV = true,
     FOVSides = 300,
@@ -44,6 +44,7 @@ getgenv().ValiantAimHacks = {
     HitChance = 100,
     Selected = LocalPlayer,
     SelectedPart = nil,
+    Prediction = 0.138   
     TargetPart = {"Head"},
     BlacklistedTeams = {
         {
@@ -53,8 +54,9 @@ getgenv().ValiantAimHacks = {
     },
     BlacklistedPlayers = {LocalPlayer},
     WhitelistedPUIDs = {91318356},
+
 }
-local ValiantAimHacks = getgenv().ValiantAimHacks
+getgenv().DaHoodSettings = DaHoodSettings
 
 -- // Show FOV
 local circle = Drawingnew("Circle")
